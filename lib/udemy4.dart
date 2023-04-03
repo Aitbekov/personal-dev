@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
- void main() {
-   runApp(const MyApp());
- }
+// void main() {
+//   runApp(const MyApp());
+// }
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -86,12 +86,20 @@ class _MyHomePageState extends State<MyHomePage> {
           // horizontal).
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            const Text(
+             RichText(text: TextSpan(
+               text:
               'You have pushed the button this many times:',
+               style: TextStyle(color: Colors.black, fontSize: 18),
+               children: [
+                 TextSpan(
+                   text: 'Sign up',
+                   style: TextStyle(
+                     color: Colors.deepOrange, fontSize: 18
+                   )
+                 )
+               ]
             ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headlineMedium,
+
             ),
           ],
         ),
