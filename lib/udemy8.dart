@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-
-void main() {
-  runApp(const MyApp());
-}
+//
+// void main() {
+//   runApp(const MyApp());
+// }
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -58,7 +58,7 @@ class _MyHomePageState extends State<MyHomePage> {
       body:  Container(
         decoration: BoxDecoration(color: Colors.green.shade100),
         child: Column(
-          
+
           children: [
             Icon(
               Icons.circle,
